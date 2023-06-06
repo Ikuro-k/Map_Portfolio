@@ -1,0 +1,474 @@
+<!-- Template sourced from w3layouts -->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Ikuro Kang’ethe Portfolio</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		<!---- start-smoth-scrolling---->
+		 <!-- Custom Theme files -->
+		 <link rel="stylesheet" href="timeline.css">
+		<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----webfonts---->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<!----//webfonts---->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+</head>
+	<body>
+		<!-----start-container----->
+			<!----- start-header---->
+			<div id="home" class="header">
+				<div class="container">
+					<div class="logo">
+						<a href="#"><h1>Ikuro Kang’ethe</h1> </a>
+					</div>
+					<!----start-top-nav---->
+					 <nav class="top-nav">
+						<ul class="top-nav">
+							<li class="active"><a href="#home" class="scroll">Home <span> </span></a></li>
+							<li class="page-scroll"><a href="#ser" class="scroll">Work history <span> </span></a></li>
+							<li class="page-scroll"><a href="#about" class="scroll">About Me <span> </span></a></li>
+							<li class="page-scroll"><a href="#port" class="scroll">Portfolio <span> </span></a></li>
+							<li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">Contact Me </a></li>
+						</ul>
+						<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+					</nav>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!----- //End-header---->
+			<!----- start-slider---->
+			<!----start-slider-script---->
+			<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!----//End-slider-script---->
+			<!-- Slideshow 4 -->
+			    <div  id="top" class="callbacks_container">
+			      <ul class="rslides" id="slider4">
+			        <li>
+			          <img src="images/slide.jpg" alt="">
+			          <div class="caption text-center">
+			          	<div class="slide-text-info">
+			          		<a class="btn1" href="#"><span>I am Ikuro Kang'ethe</span></a>
+			          		<h1>An Urban <span>Planner</span> </h1>
+			          		<div class="slide-text">
+								<p>Highly capable, well adaptable to change, in and around the work place. Adept to technology and the highly interconnected world. Extensive experience in the built environment and related fields. Outgoing, and ready to learn and acquire new skills. </p>
+
+			          		</div>
+			          	</div>
+			          </div>
+			        </li>
+			        <li>
+			          <img src="images/slide.jpg" alt="">
+			          <div class="caption text-center">
+			          	<div class="slide-text-info">
+			          		<a class="btn1" href="#"><span>I am Ikuro Kang'ethe</span></a>
+			          		<h1>A GIS  <span> Expert </span> </h1>
+			          		<div class="slide-text">
+								<p>Highly capable individual, well adaptable to change, in and around the work place. Adept to technology and the highly interconnected world. Extensive experience in the built environment and related fields. Outgoing, and ready to learn and acquire new skills. </p>
+
+			          		</div>
+			          	</div>
+			          </div>
+			        </li>
+			        <li>
+			          <img src="images/slide.jpg" alt="">
+			           <div class="caption text-center">
+			           	<div class="slide-text-info">
+			          		<a class="btn1" href="#"><span>I am Ikuro Kang'ethe</span></a>
+			          		<h1>A Strategy and <span>development</span> Advisor</h1>
+			          		<div class="slide-text">
+			          			<p>Highly capable individual, well adaptable to change, in and around the work place. Adept to technology and the highly interconnected world. Extensive experience in the built environment and related fields. Outgoing, and ready to learn and acquire new skills. </p>
+			          		</div>
+			          	</div>
+			          </div>
+			        </li>
+			      </ul>
+			    </div>
+			    <div class="clearfix"> </div>
+			<!----- //End-slider---->
+			<!----start-services---->
+			<div id="ser" class="services">
+				<div class="container">
+					<div class="services-head text-center">
+						<h3>Work History</h3>
+						<p>The following is my work history. These items are a mix of current and previous jobs.</p>
+					</div>
+			<!-- work History -->
+						<ul class="timeline">
+							<li>
+								<div class="timeline-badge">
+								<a><i class="fa fa-circle" id=""></i></a>
+								</div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h4>Swedish Medical Center</h4>
+									</div>
+									<div class="timeline-body">
+										<p>Key Roles: 
+											<ul style="margin-left: 30px;">
+												<li>
+													Receiving medical supplies.
+												</li>
+												<li>
+													Dispatching hospital supplies to various hospital departments
+												</li>
+											</ul>
+									</div>
+									<div class="timeline-footer">
+										<p class="text-right"></p>
+									</div>
+								</div>
+							</li>
+							<!-- two -->
+							<li class="timeline-inverted">
+								<div class="timeline-badge">
+									<a><i class="fa fa-circle invert" id=""></i></a>
+								</div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h4>Swissport</h4>
+									</div>
+									<div class="timeline-body">
+										<p>Key Roles:</p>
+											<ul style="margin-left: 30px;">
+												<li>
+													Ensuring aircraft fuel is ready before takeoff.
+													<li>
+													Filling up fuel trucks and delivering fuel to the aircraft. 
+													</li>
+													<li>
+													 Perform defueling when deemed necessary.
+													</li>
+											</ul>
+									</div>
+									<div class="timeline-footer">
+										<p class="text-right"></p>
+									</div>
+								</div>
+							</li>
+									
+							<!-- three -->
+							<li>
+								<div class="timeline-badge">
+									<a><i class="fa fa-circle" id=""></i></a>
+								</div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h4>Amazon fulfillment center</h4>
+									</div>
+									<div class="timeline-body">
+										<p>Key Roles:</p>
+											<ul style="margin-left: 30px;">
+												<li>
+													Receiving truck full of orders and preparing them for delivery. 
+												</li>
+												<li>
+													Staging deliveries for pick up by drivers.
+												</li>
+												<li>
+													Working with heavy machinery such as, turret trucks, stand up forklifts and mobile carts.</p>
+												</li>
+											</ul>
+								
+									</div>
+									<div class="timeline-footer">
+										<p class="text-right"></p>
+									</div>
+								</div>
+							</li>
+									
+							<!-- four -->
+							<li class="timeline-inverted">
+								<div class="timeline-badge">
+									<a><i class="fa fa-circle invert" id=""></i></a>
+								</div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h4>Kiambu County Ministry of Lands, Housing & Physical Planning.</h4>
+									</div>
+									<div class="timeline-body">
+										<p>Key Roles:</p>
+										<ul style="margin-left: 30px;">
+											<li>
+												Digitizing the County’s physical Development plans. The Digitizing Process involved use of state-of-the-art technology and employing heads-up/on-screen digitization. (Scanning of hardcopy topographical, topo cadastral, FR and RIM maps and images).</p>
+											</li>
+											<li>
+												Preparation of Kiambu County Integrated spatial plan.
+											</li>
+											<li>
+												Preparation of Physical development plans for markets within Kiambu county.
+											</li>
+											<li>
+												Participating monthly in the County Technical Planning Committee to facilitate approval of submitted development applications. 
+											</li>
+											<li>
+												Vetting proposed development applications i.e. (architectural plans, change of use briefs, subdivisions schemes & renewal of leases)
+											</li>
+										</ul>
+									</div>
+									<div class="timeline-footer">
+										<p class="text-right"></p>
+									</div>
+								</div>
+							</li>
+							
+							<!-- five -->
+							<li>
+								<div class="timeline-badge">
+									<a><i class="fa fa-circle" id=""></i></a>
+								</div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h4>Attaché at the Department of resource surveys and remote sensing (DRSRS)</h4>
+									</div>
+									<div class="timeline-body">
+										<p>key roles:</p>
+											<ul style="margin-left: 30px;">
+												<li>
+													Laboratory Mapping with Ministry of health project: GPS data collection and analysis with I-map international.</p>
+												</li>
+												<li>
+													Urban design applications: field survey, data analysis, development applications report writing, modeling of existing situation and proposed ideal design and presentation of reports using power point.
+												</li>
+												<li>
+													Creating and maintenance of datasets.
+												</li>
+												<li>
+													Digital image, processing, analysis and interpretation.
+												</li>
+												<li>
+													Spatial database development.
+												</li>
+												<li>
+													Carrying out land survey and other related field data collection activities.
+												</li>
+												<li>
+													Mapping, ground controls, digitizing and geodatabase creation.	
+												</li>
+											</ul>	
+									</div>
+									<div class="timeline-footer">
+										<p class="text-right"></p>
+									</div>
+								</div>
+							</li>
+										
+							<!-- six -->
+							<li  class="timeline-inverted">
+								<div class="timeline-badge">
+									<a><i class="fa fa-circle invert" id=""></i></a>
+								</div>
+								<div class="timeline-panel">
+									<div class="timeline-heading">
+										<h4>Real Plan Consultants</h4>
+									</div>
+									<div class="timeline-body">
+										<p>Key roles:</p>
+										<ul style="margin-left: 30px;">
+											<li>
+												Developing graphic database structures, tables, forms, and reports.
+											</li>
+											<li>
+												Image and Data Processing Software such as ENVI, IDRISI, Erdas and Surveying
+											</li>
+											<li>
+												Computer Assisted Design and Cartography and Computing Skills used in identifying landowners, Entering documented land transactions and related
+											</li>
+											<li>
+												Working cooperatively with GIS staff and /or Project Managers to complete assigned work
+											</li>
+										</ul>
+									</div>
+									<div class="timeline-footer primary">
+										<p class="text-right"></p>
+									</div>
+								</div>
+							</li>
+							<li class="clearfix no-float"></li>
+						</ul>
+			<!-- / work history -->
+					
+					<!---- start-about----->
+					<div id="about" class="about">
+						<div class="container">
+							<div class="about-head">
+								<h4>About me</h4>
+								<p>Originally from Kenya.</p>
+								<p>I have a diverse background with experience in a variety of fields, including spatial planning, policy development, strategy development, <br/> healthcare, and logistics industries. I am highly skilled in GIS software and spatial analysis, 
+									planning, organization, execution, and working  <br/>  with a range of stakeholders.My skills and experience make me well-suited for roles in planning, strategy 
+									development, and analysis, <br/> particularly in the built environment or in organizations that rely on GIS tools and spatial data.
+							
+								</p>
+								<br/>
+								<a class="about-btn" href="https://www.linkedin.com/in/george-ikuro-778836ba/">view My LinkedIN</a>
+
+							</div>
+								<!----- start-about-grids----->
+								<!-- <div class="about-grids">
+									<div class="col-md-7 about-grid-left">
+										 <img src="images/gis.png" alt="">
+										
+									</div>
+									<div class="col-md-5 about-grid-right">
+										<h5>Education.</h5>
+										<p>I have a 2nd Class Honors B.A in Urban and Regional Planning from The University of Nairobi University.</p>
+										<p>I am also currently pursuing a Masters in Geospatial Technologies from The University of Washington.</p>
+										<h6>Skills and what I do. </h6>
+										<p>I  a diverse background with experience in a variety of fields, including spatial planning, policy development, and strategy development. </p>
+										<p>I also have experience with GIS software and spatial analysis, as well as working in the healthcare and logistics industries.</p>
+										<p>I have strong skills in planning, organization, and execution, as well as the ability to work with a range of stakeholders. </p>
+										<p>Overall, my skills and experience make me well-suited for roles in planning, strategy development, and analysis, particularly in the built environment or in organizations that rely on GIS tools and spatial data.</p>
+									</div>
+									<div class="clearfix"> </div>
+								</div> -->
+								<!----- //End-about-grids----->
+							</div>
+						</div>
+		<!---- //End-about----->
+		<!-----start-portfolio---->
+		<div id="port" class="portfolio-box-main">
+			<div class="container">
+				<div class="portfolio-head text-center">
+					<h3>Portfolio</h3>
+					<span style="margin-bottom: 20px;">Here are preview samples of my personal projects.</span>
+				</div>
+			<iframe src="https://www.arcgis.com/apps/instant/portfolio/index.html?appid=fa452f74e0584c3f9ecccdfc79e65765&locale=en" 
+					width="100%" height="800px" frameborder="0" style="border:0" allowfullscreen>iFrames are not supported on this page.</iframe>
+					
+			<!----start-portfolio----->
+		
+		<br>
+		  <!-- Site footer -->
+		  <footer class="site-footer">
+			<div class="container">
+			  <div class="row">
+				<div class="col-sm-12 col-md-6">
+				  <h6>Contact Me</h6>
+				 </div>
+	  
+				<div class="col-xs-6 col-md-3">
+				  <h6>Address</h6>
+				  <ul class="footer-links">
+					<li><a href="#">gi.mambo.gm@gmail.com</a></li>
+					<li><a href="#">804-546-0520</a></li>
+					<li><a href="#">10710 SE 256TH ST, KENT, WA</a></li>
+				  </ul>
+				  <h6>Links</h6>
+				  <ul>
+					<a href="https://www.linkedin.com/in/george-ikuro-778836ba/">
+						<li>LinkedIn</li>
+					</a><a href="https://twitter.com/gi_mambo">
+						<li>Twitter</li>
+					</a><a href="https://www.instagram.com/mambo_gee/">
+						<li>Instagram</li>
+					</a>
+				  </ul>
+				</div>
+	  
+				<div class="col-xs-6 col-md-3">
+				  <h6>Quick Links</h6>
+				  <ul class="footer-links">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">History</a></li>
+					<li><a href="#">About Me</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Contact</a></li>
+				  </ul>
+				</div>
+			  </div>
+			  <hr>
+			</div>
+			<div class="container">
+			  <div class="row">
+	  
+				<div class="col-md-4 col-sm-6 col-xs-12">
+				  <ul class="social-icons">
+					<li><a class="instagram" href="https://www.instagram.com/mambo_gee/"><i class="fa fa-instagram"></i></a>
+					</li>
+					<li><a class="twitter" href="https://twitter.com/gi_mambo"><i class="fa fa-twitter"></i></a></li>
+					<li><a class="linkedin" href="https://www.linkedin.com/in/george-ikuro-778836ba/"><i class="fa fa-linkedin"></i></a></li>   
+				  </ul>
+				</div>
+			  </div>
+			</div>
+	  </footer>
+         <!----start-contact---->
+         <!-- <div id="contact" class="contact">
+         	<div class="container">
+         		<div class="contact-head text-center">
+         			<h3>Contact me</h3>
+         			
+         		<div class="contact-grids">
+         			<div class="contact-right">
+         				<h4>Contact info</h4><br />
+         				<p><span class="icon1"> </span><a href="#">gi.mambo.gm@gmail.com</a></p><br />
+         				<p><span class="icon2"> </span>804-546-0520</p><br />
+         				<p><span class="icon3"> </span><label>10710 SE 256TH ST, KENT, WA</label></p><br />
+         				<h4>Follow me on</h4><br />
+         				<ul class="list-unstyled list-inline">
+         					<li><a class="twitt" href="https://twitter.com/gi_mambo"><span> </span></a></li>
+         					<li><a class="sanp" href="https://www.instagram.com/mambo_gee/"><span> </span></a></li>
+         				</ul>
+         			</div>
+         			<div class="clearfix"> </div> -->
+         		<!-- </div>
+         	</div> -->
+         </div>
+
+	</body>
+</html>
+
